@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Use Camera</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Use Camera</h1>
+    <div class="container">
+      <form action="/camera" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
+        <input type="submit" value="Capture and Save" />
+      </form>
+      {% if message %}
+      <p>{{ message }}</p>
+      {% endif %}
+      <a href="/">Back to Home</a>
+      <script>
+        window.onbeforeunload = function () {
+          fetch("/release_camera");
+        };
+      </script>
+    </div>
+  </body>
+</html>

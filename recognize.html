@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Recognize Faces</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Recognize Faces</h1>
+    <div class="container">
+      <div>
+        <img
+          src="{{ url_for('video_feed') }}"
+          id="video"
+          alt="Video Feed"
+          style="width: 100%"
+        />
+      </div>
+      <a href="/">Back to Home</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,2 @@
+model: haarcascade_frontalface_default.xml # Path to the Haar Cascade model
+output_path: output.jpg # Path to save the output image with detected faces

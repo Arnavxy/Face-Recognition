@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Face Recognition</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+  <body>
+    <h1>Face Recognition</h1>
+    <div class="container">
+      <a href="/upload">Upload an Image</a>
+      <a href="/camera">Use Camera</a>
+      <a href="/recognize">Recognize Faces</a>
+      <a href="/capture">Open Camera and Capture Picture</a>
+    </div>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+  </body>
+</html>

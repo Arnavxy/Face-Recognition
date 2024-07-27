@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000; /* Black */
+  margin: 0;
+  padding: 0;
+  color: #ffffff; /* White */
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff; /* White */
+  margin-top: 50px;
+}
+
+form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #1e1e1e; /* Slightly lighter dark grey */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Black shadow */
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #e0e0e0; /* Light Grey */
+}
+
+input[type="text"],
+input[type="file"],
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #555555; /* Dark Grey */
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: #333333; /* Dark Grey */
+  color: #ffffff; /* White */
+}
+
+input[type="submit"] {
+  background-color: #444444; /* Slightly lighter dark grey */
+  color: #ffffff; /* White */
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #555555; /* Dark Grey */
+}
+
+/* New styles for upload buttons */
+input[type="file"] {
+  background-color: #00008b; /* Dark Blue */
+}
+
+input[type="file"]:hover {
+  background-color: #0000ff; /* Blue */
+}
+
+/* Styles for the index page buttons */
+a {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #333333; /* Dark Grey */
+  color: #ffffff; /* White */
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Black shadow */
+}
+
+a:hover {
+  background-color: #444444; /* Slightly lighter dark grey */
+  text-decoration: none;
+}
+
+#video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Black shadow */
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1e1e1e; /* Slightly lighter dark grey */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Black shadow */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5em;
+    margin-top: 30px;
+  }
+
+  form,
+  .container {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  input[type="text"],
+  input[type="file"],
+  input[type="submit"] {
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+
+  a {
+    margin: 15px 0;
+    padding: 10px;
+  }
+}
